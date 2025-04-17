@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/./frontend/generated/jar-resources",
+  "staticOutput": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/dev-bundle/config",
+  "jarResourcesFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/sw.ts",
+  "pwaEnabled": true,
+  "offlineEnabled": true,
+  "offlinePath": "'.'"
+}

@@ -1,0 +1,17 @@
+{
+  "productionMode": false,
+  "eagerServerLoad": false,
+  "npmFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app",
+  "node.version": "v20.11.1",
+  "node.download.root": "https://nodejs.org/dist/",
+  "frontendFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/frontend",
+  "connect.javaSourceFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java",
+  "javaResourceFolder": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/resources",
+  "connect.applicationProperties": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/resources/application.properties",
+  "connect.openApiFile": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/target/generated-resources/openapi.json",
+  "project.frontend.generated": "/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/frontend/generated",
+  "pnpm.enable": false,
+  "bun.enable": false,
+  "require.home.node": false,
+  "build.folder": "target"
+}
