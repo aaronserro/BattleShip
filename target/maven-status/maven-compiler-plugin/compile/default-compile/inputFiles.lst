@@ -1,3 +1,7 @@
 /Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/AppShell.java
 /Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/Application.java
+/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/logic/Board.java
+/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/logic/Coordinate.java
+/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/logic/Ship.java
+/Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/logic/ShotResult.java
 /Users/aaronserro/Desktop/DSA/BattleShip/battleship-app/src/main/java/com/battleship/views/MainView.java
