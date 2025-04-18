@@ -6,6 +6,15 @@ public class Board {
     public Board(List<Ship> ships){
         this.ships = ships;
     }
+    public boolean allShipsSunk(){
+        for(Ship ship:ships){
+            if (!ship.is_sunk()){
+                return false;
+
+            }
+        }
+        return true;
+    }
     public Set<Coordinate> Shots_fired(){
         return fired_coor;
     }
