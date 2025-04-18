@@ -18,8 +18,12 @@ public class mediumAI implements AiPlayer{
             }
         }
     }
+
     @Override
     public Coordinate getNextMove(Set<Coordinate> alreadyFired){
+        Coordinate coor = new Coordinate(1,2);
+        return coor;
     }
+
 
 }
