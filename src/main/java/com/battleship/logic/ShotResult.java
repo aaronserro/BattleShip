@@ -1,6 +1,6 @@
 package com.battleship.logic;
 
-enum ShotResult {
+public enum ShotResult {
     HIT,
     MISS,
     INVALID,
