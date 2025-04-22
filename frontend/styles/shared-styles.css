@@ -1,0 +1,17 @@
+/* ./styles/shared-styles.css */
+.main-view {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0088ff; /* AliceBlue, light tone */
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+}
+.game-board {
+    background-color: #1ec2a4;
+  }
+
