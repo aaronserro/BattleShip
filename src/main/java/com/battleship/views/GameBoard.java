@@ -31,5 +31,6 @@ public class GameBoard extends HorizontalLayout {
 
     private void handleCellClick(int x, int y) {
         // Handle cell click logic here
+        System.out.println("Cell clicked");
     }
 }

@@ -1,17 +1,132 @@
 /* ./styles/shared-styles.css */
+
+/* Main background: deep navy + subtle radar grid */
 .main-view {
+    background-color: #0a0f2c;
+    background-image:
+        linear-gradient(#2e3a59 1px, transparent 1px),
+        linear-gradient(90deg, #2e3a59 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    height: auto !important; /* Force height to grow with content */
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #0088ff; /* AliceBlue, light tone */
+    justify-content: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
 }
-.cell {
-    width: 30px;
-    height: 30px;
-    background-color: #f0f0f0;
-    border: 1px solid #000;
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
+/* Game board background (slightly transparent teal overlay) */
 .game-board {
-    background-color: #1ec2a4;
+    background-color: rgba(30, 194, 164, 0.2);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 0 12px rgba(30, 194, 164, 0.4);
+}
+.game-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00d4ff;
+    text-shadow: 2px 2px 8px rgba(0, 212, 255, 0.6);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Grid cells */
+.cell {
+    width: 36px;
+    height: 36px;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect: highlight like targeting */
+.cell:hover {
+    background-color: #c1f0ff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Optional: hit/miss feedback via dynamic class names */
+.cell.hit {
+    background-color: #e74c3c; /* red */
+}
+
+.cell.miss {
+    background-color: #3498db; /* blue */
+}
+vaadin-radio-group {
+    color: #ffffff; /* make label white */
   }
 
+  vaadin-radio-button {
+    color: #ffffff; /* make options text white */
+  }
+
+  vaadin-radio-button::part(radio) {
+    border: 2px solid #00d4ff; /* custom border */
+    background-color: #1a1f33; /* dark gray button background */
+  }
+
+  vaadin-radio-button[checked]::part(radio) {
+    background-color: #00d4ff; /* highlight selected option */
+  }
+.game-button {
+    width: 200px; /* Fixed width for consistency */
+    margin: 8px auto; /* Center horizontally with consistent spacing */
+    background: linear-gradient(145deg, #00d4ff, #0a7dbf);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+}
+
+.game-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+}
+
+.danger-button {
+    background: linear-gradient(145deg, #ff4d4d, #d30000);
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+}
+
+.danger-button:hover {
+    box-shadow: 0 6px 20px rgba(255, 77, 77, 0.5);
+}
+
+/* Optional: turn indicator or HUD component styling */
+.hud-panel {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 10px 0;
+    color: #cbd3ec;
+    font-size: 16px;
+    font-weight: bold;
+}
