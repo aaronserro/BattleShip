@@ -22,6 +22,15 @@
     padding: 2rem;
     box-sizing: border-box;
 }
+.supply-box {
+    border: 2px solid #00d4ff;
+    background-color: rgba(0, 212, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+    margin-top: 20px;
+}
 .content-wrapper {
     width: 100%;
     max-width: 1200px;
@@ -49,14 +58,24 @@
 }
 /* Grid cells */
 .cell {
-    width: 36px;
-    height: 36px;
-    background-color: #f0f0f0;
-    border: 1px solid #333;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00d4ff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 212, 255, 0.3);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+   }
+.cell:hover {
+    background-color: rgba(0, 212, 255, 0.15);
+    cursor: pointer;
+}
 /* Hover effect: highlight like targeting */
 .cell:hover {
     background-color: #c1f0ff;

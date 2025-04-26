@@ -1,5 +1,6 @@
 package com.battleship.views;
 
+import com.battleship.views.components.GameControls;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.H1;
@@ -25,6 +26,7 @@ public class MainView extends VerticalLayout {
 
         addClassName("main-view");
         buildUI();
+
     }
 
     private void buildUI() {
@@ -40,9 +42,9 @@ public class MainView extends VerticalLayout {
             System.out.println("Selected difficulty: " + selectedDifficulty);
             // You can also pass this to your GameEngine or AI here
         });
-        GameBoard board = new GameBoard();
-        board.setHeight("600px");
-        board.setWidthFull();
+        //GameBoard board = new GameBoard();
+        //board.setHeight("600px");
+        //board.setWidthFull();
 
 
         GameControls controls = new GameControls();
@@ -50,7 +52,7 @@ public class MainView extends VerticalLayout {
 
 
 
-        add(title, difficultySelector, board, controls);
+        add(title, difficultySelector, controls);//board removed
 
         setAlignItems(Alignment.CENTER);
     }
