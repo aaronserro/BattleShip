@@ -1,10 +1,11 @@
 package com.battleship.views.components;
 
+import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.dependency.CssImport;
 
 @CssImport("./styles/shared-styles.css")
-public class SupplyBox extends VerticalLayout {
+public class SupplyBox extends FlexLayout {
 
     private ShipComponent ship2,ship3;
     private ShipComponent ship,ship1,ship11,ship12,ship13,ship14,ship15;
@@ -12,9 +13,12 @@ public class SupplyBox extends VerticalLayout {
 
     public SupplyBox() {
         addClassName("supply-box");
-        setSpacing(true);
-        setPadding(true);
+        setFlexWrap(FlexWrap.WRAP);
+        getStyle().set("gap", "10px");
+        //setSpacing(true);
+        //setPadding(true);
         setAlignItems(Alignment.CENTER);
+        setWidthFull();
 
         // Create ships
         ship2 = new ShipComponent(1);
