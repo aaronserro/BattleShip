@@ -2,6 +2,7 @@ package com.battleship.views;
 
 import com.battleship.views.components.GameBoard;
 import com.battleship.views.components.GameControls;
+import com.battleship.views.components.ShipPlacementControls;
 import com.battleship.views.components.SupplyBox;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.CssImport;
@@ -57,13 +58,22 @@ public class ShipPlacementView extends VerticalLayout {
         // <--- ADD it to the page
 
 
-        GameControls controls = new GameControls();
-        controls.setWidthFull();;
+        ShipPlacementControls controls = new ShipPlacementControls(board);
+
+        controls.setWidthFull();
 
 
 
-        add(title,  supplyBox,boardWrapper, controls);//difficulty selector removed
+        //add(title,  supplyBox,boardWrapper, controls);//difficulty selector removed
+        HorizontalLayout contentWrapper = new HorizontalLayout();
+        contentWrapper.setWidthFull();
+        contentWrapper.setJustifyContentMode(JustifyContentMode.CENTER);
+        contentWrapper.setAlignItems(Alignment.START); // top align
+        contentWrapper.setSpacing(true);
+        contentWrapper.add(supplyBox, boardWrapper);
+        contentWrapper.setWidth("600px");
 
+        add(title, contentWrapper, controls);
         setAlignItems(Alignment.CENTER);
 
     }
